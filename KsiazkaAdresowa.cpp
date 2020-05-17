@@ -3,10 +3,14 @@
 
 using namespace std;
 
+KsiazkaAdresowa::KsiazkaAdresowa(){
+    managerUzytkownika.wczytajUzytkownikowZPliku();
+}
+
 void KsiazkaAdresowa::rejestracjaUzytkownika(){
-    menagerUzytkownika.rejestracjaUzytkownika();
+    managerUzytkownika.rejestracjaUzytkownika();
 }
 
 void KsiazkaAdresowa::wypiszWszystkichUzytkownikow(){
-    menagerUzytkownika.wypiszWszystkichUzytkownikow();
+    managerUzytkownika.wypiszWszystkichUzytkownikow();
 }

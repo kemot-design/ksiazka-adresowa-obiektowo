@@ -7,9 +7,10 @@
 using namespace std;
 
 class KsiazkaAdresowa{
-    UzytkownikManager menagerUzytkownika;
+    UzytkownikManager managerUzytkownika;
 
 public:
+    KsiazkaAdresowa();
     void rejestracjaUzytkownika();
     void wypiszWszystkichUzytkownikow();
 };
