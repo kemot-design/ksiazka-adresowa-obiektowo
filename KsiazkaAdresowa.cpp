@@ -3,10 +3,6 @@
 
 using namespace std;
 
-KsiazkaAdresowa::KsiazkaAdresowa(){
-    managerUzytkownika.wczytajUzytkownikowZPliku();
-}
-
 void KsiazkaAdresowa::rejestracjaUzytkownika(){
     managerUzytkownika.rejestracjaUzytkownika();
 }

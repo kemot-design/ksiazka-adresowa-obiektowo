@@ -17,6 +17,7 @@ class UzytkownikManager{
     int pobierzIdNowegoUzytkownika();
     bool czyIstniejeLogin(string login);
 public:
+    UzytkownikManager(string plikTxtZUzytkownikami): plikZUzytkownikami(plikTxtZUzytkownikami){};
     void rejestracjaUzytkownika();
     void wypiszWszystkichUzytkownikow();
     void wczytajUzytkownikowZPliku();
