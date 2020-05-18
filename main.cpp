@@ -7,7 +7,7 @@ int main()
 {
     KsiazkaAdresowa ksiazkaAdresowa ("Uzytkownicy.txt");
     ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
-    ksiazkaAdresowa.logowanieUzytkownika();
+    //ksiazkaAdresowa.logowanieUzytkownika();
     ksiazkaAdresowa.zmienHasloZalogowanegoUzytkownika();
     ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
 
