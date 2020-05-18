@@ -21,6 +21,9 @@ public:
     void rejestracjaUzytkownika();
     void wypiszWszystkichUzytkownikow();
     void wczytajUzytkownikowZPliku();
+    void logowanieUzytkownika();
+    void wylogujUzytkownika();
+    void zmienHasloZalogowanegoUzytkownika();
 };
 
 #endif // URZYTKOWNIKMANAGER_H
