@@ -10,3 +10,15 @@ void KsiazkaAdresowa::rejestracjaUzytkownika(){
 void KsiazkaAdresowa::wypiszWszystkichUzytkownikow(){
     managerUzytkownika.wypiszWszystkichUzytkownikow();
 }
+
+void KsiazkaAdresowa::logowanieUzytkownika(){
+    managerUzytkownika.logowanieUzytkownika();
+}
+
+void KsiazkaAdresowa::wylogujUzytkownika(){
+    managerUzytkownika.wylogujUzytkownika();
+}
+
+void KsiazkaAdresowa::zmienHasloZalogowanegoUzytkownika(){
+    managerUzytkownika.zmienHasloZalogowanegoUzytkownika();
+}
