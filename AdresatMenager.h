@@ -14,8 +14,9 @@ class AdresatMenager{
     int idOstatniegoAdresata;
     vector <Adresat> adresaci;
     PlikZAdresatami plikZAdresatami;
+
     Adresat podajDaneNowegoAdresata();
-    string zamienPierwszaLitereNaDuzaAPozostaleNaMale(string tekst);
+    void wyswietlDaneAdresata(Adresat adresat);
 
 public:
     AdresatMenager(): idZalogowanegoUzytkownika(0), idOstatniegoAdresata(0){}

@@ -28,3 +28,7 @@ void KsiazkaAdresowa::zmienHasloZalogowanegoUzytkownika(){
 void KsiazkaAdresowa::dodajAdresata(){
     menagerAdresata.dodajAdresata();
 }
+
+void KsiazkaAdresowa::wyswietlWszystkichAdresatow(){
+    menagerAdresata.wyswietlWszystkichAdresatow();
+}

@@ -23,6 +23,7 @@ public:
     void wylogujUzytkownika();
     void zmienHasloZalogowanegoUzytkownika();
     void dodajAdresata();
+    void wyswietlWszystkichAdresatow();
 };
 
 #endif
