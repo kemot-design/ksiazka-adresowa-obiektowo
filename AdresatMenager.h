@@ -21,7 +21,7 @@ class AdresatMenager{
 public:
     AdresatMenager(): idZalogowanegoUzytkownika(0), idOstatniegoAdresata(0){}
     void dodajAdresata();
-    void wyswietlWszystkichAdresatow();
+    void wyswietlWszystkichAdresatowUzytkownika();
     void ustawIdZalogowanegoUzytkownika(int noweIdZalogowanegoUzytkownika);
     void wczytajAdresatowZalogowanegoUzytkownikaZPliku();
 };

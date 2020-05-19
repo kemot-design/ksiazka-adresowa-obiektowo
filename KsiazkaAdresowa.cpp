@@ -29,6 +29,6 @@ void KsiazkaAdresowa::dodajAdresata(){
     menagerAdresata.dodajAdresata();
 }
 
-void KsiazkaAdresowa::wyswietlWszystkichAdresatow(){
-    menagerAdresata.wyswietlWszystkichAdresatow();
+void KsiazkaAdresowa::wyswietlWszystkichAdresatowUzytkownika(){
+    menagerAdresata.wyswietlWszystkichAdresatowUzytkownika();
 }

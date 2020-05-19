@@ -17,6 +17,7 @@ string MetodyPomocnicze::konwerjsaIntNaString(int liczba)
     ss << liczba;
     string str = ss.str();
     return str;
+
 }
 
 int MetodyPomocnicze::konwersjaStringNaInt(string liczba)

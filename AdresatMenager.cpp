@@ -58,7 +58,7 @@ void AdresatMenager::wczytajAdresatowZalogowanegoUzytkownikaZPliku(){
     idOstatniegoAdresata = plikZAdresatami.wczytajAdresatowZalogowanegoUzytkownikaZPliku(adresaci, idZalogowanegoUzytkownika);
 }
 
-void AdresatMenager::wyswietlWszystkichAdresatow()
+void AdresatMenager::wyswietlWszystkichAdresatowUzytkownika()
 {
     system("cls");
     if (!adresaci.empty())
