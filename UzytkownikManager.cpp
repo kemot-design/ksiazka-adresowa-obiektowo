@@ -122,3 +122,6 @@ void UzytkownikManager::zmienHasloZalogowanegoUzytkownika(){
     plikZUzytkownikami.zapiszWszystkichUzytkownikowDoPliku(uzytkownicy);
 }
 
+int UzytkownikManager::pobierzIdZalogowanegoUzytkownika(){
+    return idZalogowanegoUzytkownika;
+}
