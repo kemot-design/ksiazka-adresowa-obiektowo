@@ -4,11 +4,14 @@
 #include <iostream>
 #include "UzytkownikManager.h"
 #include "PlikZUzytkownikami.h"
+#include "AdresatMenager.h"
+
 
 using namespace std;
 
 class KsiazkaAdresowa{
     UzytkownikManager managerUzytkownika;
+    AdresatMenager menagerAdresata;
 
 public:
     KsiazkaAdresowa(string plikTxtZUzytkownikami): managerUzytkownika(plikTxtZUzytkownikami){
@@ -19,6 +22,8 @@ public:
     void logowanieUzytkownika();
     void wylogujUzytkownika();
     void zmienHasloZalogowanegoUzytkownika();
+    void dodajAdresata();
+    void wyswietlWszystkichAdresatow();
 };
 
 #endif

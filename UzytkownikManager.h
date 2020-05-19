@@ -24,6 +24,7 @@ public:
     void logowanieUzytkownika();
     void wylogujUzytkownika();
     void zmienHasloZalogowanegoUzytkownika();
+    int pobierzIdZalogowanegoUzytkownika();
 };
 
 #endif // URZYTKOWNIKMANAGER_H
