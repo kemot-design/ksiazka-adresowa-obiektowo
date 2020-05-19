@@ -66,3 +66,8 @@ string AdresatMenager::zamienPierwszaLitereNaDuzaAPozostaleNaMale(string tekst){
 void AdresatMenager::ustawIdZalogowanegoUzytkownika(int noweIdZalogowanegoUzytkownika){
     idZalogowanegoUzytkownika = noweIdZalogowanegoUzytkownika;
 }
+
+void AdresatMenager::wczytajAdresatowZalogowanegoUzytkownikaZPliku(){
+    idOstatniegoAdresata = plikZAdresatami.wczytajAdresatowZalogowanegoUzytkownikaZPliku(adresaci, idZalogowanegoUzytkownika);
+}
+

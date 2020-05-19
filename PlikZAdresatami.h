@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <vector>
 #include "Adresat.h"
 #include "MetodyPomocnicze.h"
 
@@ -12,11 +13,16 @@ class PlikZAdresatami{
     string nazwaPlikuZAdresatami;
     string zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami(Adresat adresat);
     bool czyPlikJestPusty(fstream &plikTekstowy);
+    int pobierzIdUzytkownikaZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami);
+    string pobierzLiczbe(string tekst, int pozycjaZnaku);
+    Adresat pobierzDaneAdresata(string daneAdresataOddzielonePionowymiKreskami);
+    int pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami);
+
 
 public:
     PlikZAdresatami():nazwaPlikuZAdresatami("Adresaci.txt"){}
     void dopiszAdresataDoPliku(Adresat adresat);
-    void wczytajAdresatowZalogowanegoUzytkownikaZPliku();
+    int wczytajAdresatowZalogowanegoUzytkownikaZPliku(vector <Adresat> &adresaci, int idZalogowanegoUzytkownika);
 };
 
 #endif // PLIKZADRESATAMI_H

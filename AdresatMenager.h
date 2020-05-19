@@ -22,6 +22,7 @@ public:
     void dodajAdresata();
     void wyswietlWszystkichAdresatow();
     void ustawIdZalogowanegoUzytkownika(int noweIdZalogowanegoUzytkownika);
+    void wczytajAdresatowZalogowanegoUzytkownikaZPliku();
 };
 
 #endif // ADRESATMANAGER_H
