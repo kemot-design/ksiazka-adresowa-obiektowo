@@ -17,6 +17,7 @@ int main()
     system("pause");
     system("cls");
     ksiazkaAdresowa.dodajAdresata();
+    ksiazkaAdresowa.dodajAdresata();
     ksiazkaAdresowa.wyswietlWszystkichAdresatowUzytkownika();
 
     return 0;

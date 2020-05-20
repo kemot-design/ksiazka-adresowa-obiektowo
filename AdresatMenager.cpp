@@ -21,7 +21,7 @@ void AdresatMenager::dodajAdresata(){
 Adresat AdresatMenager::podajDaneNowegoAdresata(){
     Adresat adresat;
 
-    adresat.ustawId(++idOstatniegoAdresata);
+    adresat.ustawId(idOstatniegoAdresata+1);
     adresat.ustawIdUzytkownika(idZalogowanegoUzytkownika);
 
     string noweDane;
