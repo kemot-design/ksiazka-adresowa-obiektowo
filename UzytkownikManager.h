@@ -17,7 +17,10 @@ class UzytkownikManager{
     int pobierzIdNowegoUzytkownika();
     bool czyIstniejeLogin(string login);
 public:
-    UzytkownikManager(string plikTxtZUzytkownikami): plikZUzytkownikami(plikTxtZUzytkownikami){};
+    UzytkownikManager(string plikTxtZUzytkownikami): plikZUzytkownikami(plikTxtZUzytkownikami){
+        idZalogowanegoUzytkownika = 0;
+        uzytkownicy = plikZUzytkownikami.wczytajUzytkownikowZPliku();
+    };
     void rejestracjaUzytkownika();
     void wypiszWszystkichUzytkownikow();
     void wczytajUzytkownikowZPliku();
@@ -25,6 +28,7 @@ public:
     void wylogujUzytkownika();
     void zmienHasloZalogowanegoUzytkownika();
     int pobierzIdZalogowanegoUzytkownika();
+    bool czyUzutkownikJestZalogowany();
 };
 
 #endif // URZYTKOWNIKMANAGER_H

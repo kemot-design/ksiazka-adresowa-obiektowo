@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
-  <zoom_level>6</zoom_level>
+  <zoom_level>11</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>426</x>
-      <y>18</y>
-      <w>228</w>
-      <h>126</h>
+      <x>462</x>
+      <y>0</y>
+      <w>418</w>
+      <h>231</h>
     </coordinates>
     <panel_attributes>KsiazkaAdresowa
 --
@@ -29,10 +29,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>180</x>
-      <y>186</y>
-      <w>138</w>
-      <h>72</h>
+      <x>11</x>
+      <y>308</y>
+      <w>253</w>
+      <h>132</h>
     </coordinates>
     <panel_attributes>Uzytkownik
 -
@@ -46,14 +46,14 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>180</x>
-      <y>480</y>
-      <w>324</w>
-      <h>120</h>
+      <x>11</x>
+      <y>847</y>
+      <w>594</w>
+      <h>220</h>
     </coordinates>
     <panel_attributes>PlikZUzytkownikami
 --
-- nazwaPlikuZUzytkownikami: const string
+- NAZWA_PLIKU_Z_UZYTKOWNIKAMI: string
 --
 + PlikZUzytkownikami()
 + dopiszUzytkownikaDoPliku(): void
@@ -67,10 +67,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>180</x>
-      <y>276</y>
-      <w>198</w>
-      <h>186</h>
+      <x>11</x>
+      <y>473</y>
+      <w>363</w>
+      <h>341</h>
     </coordinates>
     <panel_attributes>UzytkownikMenager
 --
@@ -93,10 +93,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>420</x>
-      <y>186</y>
-      <w>252</w>
-      <h>102</h>
+      <x>451</x>
+      <y>308</y>
+      <w>462</w>
+      <h>187</h>
     </coordinates>
     <panel_attributes>MetodyPomocnicze
 --
@@ -109,10 +109,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>714</x>
-      <y>192</y>
-      <w>138</w>
-      <h>96</h>
+      <x>990</x>
+      <y>319</y>
+      <w>253</w>
+      <h>176</h>
     </coordinates>
     <panel_attributes>Adresat
 --
@@ -130,10 +130,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>714</x>
-      <y>300</y>
-      <w>276</w>
-      <h>132</h>
+      <x>990</x>
+      <y>517</y>
+      <w>506</w>
+      <h>242</h>
     </coordinates>
     <panel_attributes>AdresatMenager
 --
@@ -154,14 +154,14 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>714</x>
-      <y>450</y>
-      <w>348</w>
-      <h>132</h>
+      <x>990</x>
+      <y>792</y>
+      <w>638</w>
+      <h>242</h>
     </coordinates>
     <panel_attributes>PlikZAdresatami
 --
-- nazwaPlikuZAdresatami: const string
+- NAZWA_PLIKU_Z_ADRESATAMI: string
 --
 + PlikZAdresatami()
 + dopiszAdresataDoPliku(): void
