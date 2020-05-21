@@ -11,7 +11,7 @@ public:
     static  string wczytajLinie();
     static int konwersjaStringNaInt(string liczba);
     static string zamienPierwszaLitereNaDuzaAPozostaleNaMale(string tekst);
-
+    static char wczytajZnak();
 
 };
 

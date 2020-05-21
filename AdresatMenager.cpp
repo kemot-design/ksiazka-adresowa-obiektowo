@@ -13,16 +13,20 @@ void AdresatMenager::dodajAdresata(){
     adresat = podajDaneNowegoAdresata();
 
     adresaci.push_back(adresat);
-    plikZAdresatami.dopiszAdresataDoPliku(adresat);
-
-    idOstatniegoAdresata++;
+    if(plikZAdresatami.dopiszAdresataDoPliku(adresat)){
+        cout << "Nowy adresat zostal dodany" << endl;
+    }
+    else {
+        cout << "Blad. Nie udalo sie dodac nowego adresata do pliku." << endl;
+    }
+    system("pause");
 }
 
 Adresat AdresatMenager::podajDaneNowegoAdresata(){
     Adresat adresat;
 
-    adresat.ustawId(idOstatniegoAdresata+1);
-    adresat.ustawIdUzytkownika(idZalogowanegoUzytkownika);
+    adresat.ustawId(plikZAdresatami.pobierzIdOstatniegoAdresata() + 1);
+    adresat.ustawIdUzytkownika(ID_ZALOGOWANEGO_UZYTKOWNIKA);
 
     string noweDane;
     cout << "Podaj imie: ";
@@ -48,14 +52,6 @@ Adresat AdresatMenager::podajDaneNowegoAdresata(){
     adresat.ustawAdres(noweDane);
 
     return adresat;
-}
-
-void AdresatMenager::ustawIdZalogowanegoUzytkownika(int noweIdZalogowanegoUzytkownika){
-    idZalogowanegoUzytkownika = noweIdZalogowanegoUzytkownika;
-}
-
-void AdresatMenager::wczytajAdresatowZalogowanegoUzytkownikaZPliku(){
-    idOstatniegoAdresata = plikZAdresatami.wczytajAdresatowZalogowanegoUzytkownikaZPliku(adresaci, idZalogowanegoUzytkownika);
 }
 
 void AdresatMenager::wyswietlWszystkichAdresatowUzytkownika()
@@ -87,3 +83,4 @@ void AdresatMenager::wyswietlDaneAdresata(Adresat adresat)
     cout << "Email:              " << adresat.pobierzEmail() << endl;
     cout << "Adres:              " << adresat.pobierzAdres() << endl;
 }
+

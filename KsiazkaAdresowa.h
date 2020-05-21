@@ -11,11 +11,17 @@ using namespace std;
 
 class KsiazkaAdresowa{
     UzytkownikManager managerUzytkownika;
-    AdresatMenager menagerAdresata;
+    AdresatMenager* menagerAdresata;
+    const string NAZWA_PLIKU_Z_ADRESATAMI;
 
 public:
-    KsiazkaAdresowa(string plikTxtZUzytkownikami): managerUzytkownika(plikTxtZUzytkownikami){
-        managerUzytkownika.wczytajUzytkownikowZPliku();
+    KsiazkaAdresowa(string nazwaPlikuZUzytkownikami, string nazwaPlikuZAdresatami)
+    : managerUzytkownika(nazwaPlikuZUzytkownikami), NAZWA_PLIKU_Z_ADRESATAMI(nazwaPlikuZAdresatami){
+        menagerAdresata = NULL;
+    }
+    ~KsiazkaAdresowa(){
+        delete menagerAdresata;
+        menagerAdresata = NULL;
     }
     void rejestracjaUzytkownika();
     void wypiszWszystkichUzytkownikow();
@@ -24,6 +30,10 @@ public:
     void zmienHasloZalogowanegoUzytkownika();
     void dodajAdresata();
     void wyswietlWszystkichAdresatowUzytkownika();
+    bool czyUzytkownikJestZalogowany();
+    char wybierzOpcjeZMenuGlownego();
+    char wybierzOpcjeZMenuUzytkownika();
+
 };
 
 #endif
