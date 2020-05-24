@@ -42,11 +42,9 @@ int main()
                 break;
             case '2':
                 ksiazkaAdresowa.wyszukajAdresatowPoImieniu();
-                system("pause");
                 break;
             case '3':
-                cout << "Wyszukaj po nazwisku..." << endl;
-                system("pause");
+                ksiazkaAdresowa.wyszukajAdresatowPoNazwisku();
                 break;
             case '4':
                 ksiazkaAdresowa.wyswietlWszystkichAdresatowUzytkownika();

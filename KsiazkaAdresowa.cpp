@@ -98,3 +98,7 @@ void KsiazkaAdresowa::wyszukajAdresatowPoImieniu(){
     menagerAdresata -> wyszukajAdresatowPoImieniu();
 }
 
+void KsiazkaAdresowa::wyszukajAdresatowPoNazwisku(){
+    menagerAdresata -> wyszukajAdresatowPoNazwisku();
+}
+
