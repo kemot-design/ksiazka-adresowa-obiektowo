@@ -85,3 +85,20 @@ char KsiazkaAdresowa::wybierzOpcjeZMenuUzytkownika()
 
     return wybor;
 }
+
+void KsiazkaAdresowa::usunAdresata(){
+    menagerAdresata -> usunAdresata();
+}
+
+void KsiazkaAdresowa::edytujAdresata(){
+    menagerAdresata -> edytujAdresata();
+}
+
+void KsiazkaAdresowa::wyszukajAdresatowPoImieniu(){
+    menagerAdresata -> wyszukajAdresatowPoImieniu();
+}
+
+void KsiazkaAdresowa::wyszukajAdresatowPoNazwisku(){
+    menagerAdresata -> wyszukajAdresatowPoNazwisku();
+}
+
