@@ -20,6 +20,7 @@ class AdresatMenager{
     char wybierzOpcjeZMenuEdycja();
     void zaktualizujDaneWybranegoAdresata(Adresat adresat);
     string zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami(Adresat adresat);
+    void wyswietlIloscWyszukanychAdresatow(int iloscAdresatow);
 
 public:
     AdresatMenager(string nazwaPlikuZAdresatami, int idZalogowanegoUzytkownika)
@@ -30,6 +31,7 @@ public:
     void wyswietlWszystkichAdresatowUzytkownika();
     void usunAdresata();
     void edytujAdresata();
+    void wyszukajAdresatowPoImieniu();
 };
 
 #endif // ADRESATMANAGER_H

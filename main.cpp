@@ -41,11 +41,11 @@ int main()
                 ksiazkaAdresowa.dodajAdresata();
                 break;
             case '2':
-                cout << "Prace w toku..." << endl;
+                ksiazkaAdresowa.wyszukajAdresatowPoImieniu();
                 system("pause");
                 break;
             case '3':
-                cout << "Prace w toku..." << endl;
+                cout << "Wyszukaj po nazwisku..." << endl;
                 system("pause");
                 break;
             case '4':
