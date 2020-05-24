@@ -52,8 +52,7 @@ int main()
                 ksiazkaAdresowa.wyswietlWszystkichAdresatowUzytkownika();
                 break;
             case '5':
-                cout << "Prace w toku..." << endl;
-                system("pause");
+                ksiazkaAdresowa.usunAdresata();
                 break;
             case '6':
                 cout << "Prace w toku..." << endl;
