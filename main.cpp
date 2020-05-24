@@ -55,8 +55,7 @@ int main()
                 ksiazkaAdresowa.usunAdresata();
                 break;
             case '6':
-                cout << "Prace w toku..." << endl;
-                system("pause");
+                ksiazkaAdresowa.edytujAdresata();
                 break;
             case '7':
                 ksiazkaAdresowa.zmienHasloZalogowanegoUzytkownika();

@@ -87,6 +87,10 @@ char KsiazkaAdresowa::wybierzOpcjeZMenuUzytkownika()
 }
 
 void KsiazkaAdresowa::usunAdresata(){
-    menagerAdresata->usunAdresata();
+    menagerAdresata -> usunAdresata();
+}
+
+void KsiazkaAdresowa::edytujAdresata(){
+    menagerAdresata -> edytujAdresata();
 }
 

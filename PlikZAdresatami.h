@@ -33,6 +33,7 @@ public:
     vector <Adresat> wczytajAdresatowZalogowanegoUzytkownikaZPliku(int idZalogowanegoUzytkownika);
     int pobierzIdOstatniegoAdresata();
     void usunWybranegoAdresataWPliku(int idUsuwanegoAdresata);
+    void edytujWybranaLinieWPliku(string liniaZDanymiAdresataOddzielonePionowymiKreskami);
 };
 
 #endif // PLIKZADRESATAMI_H

@@ -34,6 +34,7 @@ public:
     char wybierzOpcjeZMenuGlownego();
     char wybierzOpcjeZMenuUzytkownika();
     void usunAdresata();
+    void edytujAdresata();
 
 };
 
